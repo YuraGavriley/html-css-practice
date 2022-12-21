@@ -3,11 +3,41 @@ body {
   flex-direction: column;
   margin: 0;
   padding: 0;
+  background: linear-gradient(0.15turn, #fb6007b2, #f3de2c, #7cb518, #5c8001, #fbb02d);
+  background: repeating-linear-gradient(
+    90deg,
+    transparent,
+    transparent 50px,
+    #fbaf2dbf 50px,
+    #fbb02de1 56px,
+    transparent 56px,
+    transparent 63px,
+    #fbb02de1 63px,
+    #fbb02de1 69px,
+    transparent 69px,
+    transparent 116px,
+    #fb6007e1 116px,
+    #fb6007e1 166px
+  ), repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 50px,
+    #fbb02de1 50px,
+    #fbb02de1 56px,
+    transparent 56px,
+    transparent 63px,
+    #fbb02de1 63px,
+    #fbb02de1 69px,
+    transparent 69px,
+    transparent 116px,
+    #fb6007e1 116px,
+    #fb6007e1 166px
+  )
 }
 
 a {
   text-decoration: none;
-  color: antiquewhite;
+  color: rgb(230, 233, 227);
 }
 
 a {
@@ -30,14 +60,14 @@ ul{
 .header {
   margin: 0;
   padding: 0;
-  background: linear-gradient(0.25turn, #004b23, #008000, #004b23);
+  background: linear-gradient(#050505, #043a06);
 }
 
 .top-header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: antiquewhite;
+  color: #a7420c;
   padding: 35px;
   padding-top: 10px;
 }
@@ -45,6 +75,12 @@ ul{
 .logo {
   font-size: 40px;
   font-weight: 800;
+  color: #f5f5f5;
+  background-image: -webkit-linear-gradient(55deg, #f5f5f5 56%,#a7420c 0%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
 }
 
 .top-header ul {
@@ -62,29 +98,42 @@ ul{
   gap: 25px;
   justify-content: center;
   padding-bottom: 45px;
-  color:#ddca7d;
+  color:rgb(198, 198, 198);
 }
 
 #header {
   font-size: 35px;
   font-weight: 600;
-  color: #b88b4a;
+  color: whitesmoke;
 }
 
 .image {
-  height: 190px;
-  width: 400px;
+	flex-shrink: 0;
+	border: 6px solid transparent;
+	box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
 }
 
-.image img {
-  height: 190px;
+.image {
+  padding: 6px;
+  height: 220px;
   width: 400px;
+  border-radius: 10% 50%;
+
+}
+
+.image img{
+  height: 220px;
+  width: 400px;
+  border-radius: 10% 50%;
 }
 
 button {
-  background-color: #dd8922cc;
+  background-color: #075d0a;
+  border:2px solid #043a06;
   width: 120px;
+  margin-top: 12px;
   padding: 8px;
   border-radius: 8px;
   cursor: pointer;
+  color: whitesmoke
 }
